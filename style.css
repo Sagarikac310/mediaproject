@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+.section-heading
+{
+    font-size: 2rem;
+}
+header {
+    height: 100%;
+    width: 100%;
+    float: left;
+    background: #020122;
+    padding: 0 20px;
+    color: #fff;
+}
+.brand-logo {
+    max-width: 75px;
+    float: left;
+    padding: 14px 0px;
+}
+.brand-logo img {
+    max-width: 100%;
+}
+.navigation {
+    margin: 0px;
+    float: right;
+}
+.navigation li {
+    list-style: none;
+    float: left;
+}
+.navigation li a {
+    color: #fff;
+    padding: 20px 20px 40px 40px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.navigation li a i {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn {
+    margin: 0px;
+    float: right;
+}
+.show-menu-btn i {
+    line-height: 100px;
+}
+.navigation a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #ffcc00;
+}
+#toggle-btn {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+/*-- Responsive CSS --*/
+@media screen and (max-width:800px) {
+.show-menu-btn,
+.hide-menu-btn {
+    display: block;
+}
+.navigation {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: -100%;
+    left: 0;
+    padding: 50px 0px;
+    transition: 1s;
+}
+.navigation li {
+    width: 100%;
+}
+.navigation li a {
+    padding: 15px 15px;
+    text-align: left;
+}
+.navigation li a i {
+    width: auto;
+    font-size: 20px;
+}
+.hide-menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+#toggle-btn:checked ~ nav .navigation {
+    top: 0px;
+}
+}
+
+
+.blog-card {
+	border-radius: 10px;
+	background-color: #fff;
+	width: 300px;
+	margin: 2vh;
+  }
+  
+  .header {
+	background-color: #ffcc00;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+  }
+  
+  .category {
+	margin: 0;
+	padding: 1vw;
+	color: #fff;
+	font-size: 1em;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	text-transform: uppercase;
+  }
+  
+  .picture-wrapper {
+	height: 30vh;
+	width: 100%;
+	background-image: url(http://www.bghtechpartner.com/wp-content/uploads/2016/12/buenosaires-puerto-madero.jpg);
+	background-size: cover;
+  }
+  
+  .text-wrapper {
+	font-family: sans-serif;
+  }
+  
+  .title {
+	font-size: 1.25em;
+	padding: 6vh 4vh 2vh 4vh;
+  }
+  
+  .author {
+	font-size: 0.75em;
+	padding-left: 4vh;
+	font-style: italic;
+  }
+  
+  .text {
+	font-size: 1em;
+	padding: 4vh 4vh;
+  }
+  
+  .hover {
+	font-size: 1.5625em;
+  }
+  
+  
+  @media screen and (min-width: 800px) {
+	.blog-card {
+	  width: 600px;
+	}
+  
+	.content {
+	  display: flex;
+	  flex-direction: row;
+	}
+	  
+	.picture-wrapper {
+	  height: auto;
+	  width: 60%;
+	  border-bottom-left-radius: 10px;
+	}
+  
+	.title {
+	  padding-right: 10vh;
+	}
+  }
